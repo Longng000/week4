@@ -7,14 +7,12 @@ Git installed on your machine.
 Steps to Create and Set Up the Project
 Create a New Angular Project
 
-bash
+
 ng new week4tut
 When prompted, add Angular routing (Yes).
 Choose your preferred stylesheet format (CSS, SCSS, etc.).
 Install Bootstrap
 
-bash
-Copy code
 npm install bootstrap --save
 Add Bootstrap to your angular.json file under the styles array:
 json
