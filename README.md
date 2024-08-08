@@ -33,7 +33,7 @@ Add Routing
 
 Update your app.routes.ts file (or app-routing.module.ts if present):
 typescript
-Copy code
+
 import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { AccountComponent } from './account/account.component';
@@ -45,7 +45,7 @@ export const routes: Routes = [
 ];
 Import and add the RouterModule in your app.module.ts:
 typescript
-Copy code
+
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 
@@ -58,7 +58,7 @@ Update app.component.html for Navigation
 
 Add the following code to create a Bootstrap navbar linking the login and account pages:
 html
-Copy code
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" routerLink="/">Home</a>
   <div class="collapse navbar-collapse">
@@ -79,7 +79,7 @@ Implement Login Functionality
 
 Update login.component.ts with hard-coded users and login logic:
 typescript
-Copy code
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -112,7 +112,7 @@ export class LoginComponent {
 }
 Update login.component.html with the login form:
 html
-Copy code
+
 <div class="login-container">
   <form (ngSubmit)="login()">
     <div class="form-group">
@@ -132,7 +132,7 @@ Add an Image to the Account Page
 Move your image to public/images/.
 Update account.component.html to display the image:
 html
-Copy code
+
 <div>
   <h1>Accounts Page</h1>
   <img src="images/account-image.jpg" alt="Account Image">
